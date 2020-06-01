@@ -69,8 +69,9 @@ class Reservation extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label class="text-sm uppercase text-grey-darkest">
+        <label class="hover:text-purple hover:underline px-4">
           First Name
+          <br/>
           <input
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
             name="firstName"
@@ -86,7 +87,7 @@ class Reservation extends React.Component {
           </span>
         )}
         <br />
-        <label class="text-sm uppercase text-grey-darkest">
+        <label class="hover:text-purple hover:underline px-4">
           Last Name
           <input
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
@@ -105,7 +106,7 @@ class Reservation extends React.Component {
         )}
         <br />
         {}
-        <label class="text-sm uppercase text-grey-darkest">
+        <label class="hover:text-purple hover:underline px-4">
           Email Address
           <input
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
@@ -122,7 +123,7 @@ class Reservation extends React.Component {
           </span>
         )}
         <br />
-        <label class="text-sm uppercase text-grey-darkest">
+        <label class="hover:text-purple hover:underline px-4">
           Number of guests
           <input
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"

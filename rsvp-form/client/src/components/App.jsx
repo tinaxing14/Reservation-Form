@@ -32,6 +32,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Reservation Form</h1>
+        <br/>
         <Reservation handleInsert={this.handleInsert} />
       </div>
     )
