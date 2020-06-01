@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/../client/dist'));
 
 app.post('/rsvps', (req, res) => {
+  console.log(req.body)
   findRsvpAndUpdate(req.body, (err, result) => {
     if(err) {
-      console.log(err);
       res.status(500).send();
     } else {
       res.status(200).json(result)
