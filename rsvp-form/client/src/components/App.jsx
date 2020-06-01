@@ -1,7 +1,5 @@
 import React from 'react';
 import $ from 'jquery';
-import InsertConfirmation from './insertConfirmation.jsx';
-import UpdateConfirmation from './updateConfirmation.jsx';
 import Reservation from './Reservation.jsx';
 import axios from 'axios';
 
@@ -33,9 +31,8 @@ class App extends React.Component {
   render() {
     return(
       <div>
+        <h1>Reservation Form</h1>
         <Reservation handleInsert={this.handleInsert} />
-        <InsertConfirmation rsvp ={this.state.rsvp} />
-        <UpdateConfirmation rsvp ={this.state.rsvp}/>
       </div>
     )
   }
